@@ -103,13 +103,10 @@ history 10
 
 ##  工具🔧
 
-###  火眼手机
+- 火眼手机 [说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%81%AB%E7%9C%BC%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
+- 火眼仿真 [说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%81%AB%E7%9C%BC%E4%BB%BF%E7%9C%9F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
+- 网探 [说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%BD%91%E6%8E%A2%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
 
-[说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%81%AB%E7%9C%BC%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
-
-###  火眼仿真
-
-[说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%81%AB%E7%9C%BC%E4%BB%BF%E7%9C%9F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
 
 
 
