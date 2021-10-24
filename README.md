@@ -2,8 +2,8 @@
 
 ##  Wp
 
-- [2020长安杯Wp pro]()
-- [2019长安杯Wp pro]()
+- [2020长安杯Wp pro](https://github.com/hengyi666/Digital-forensics/blob/main/2020%E9%95%BF%E5%AE%89%E6%9D%AFWp.md)
+- [2019长安杯Wp pro](https://github.com/hengyi666/Digital-forensics/blob/main/2019%E9%95%BF%E5%AE%89%E6%9D%AFWp.md)
 
 ##  必要的命令
 
@@ -105,11 +105,11 @@ history 10
 
 ###  火眼手机
 
-说明书链接🔗
+[说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%81%AB%E7%9C%BC%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
 
 ###  火眼仿真
 
-说明书链接🔗
+[说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%81%AB%E7%9C%BC%E4%BB%BF%E7%9C%9F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
 
 
 
