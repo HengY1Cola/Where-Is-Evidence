@@ -1,119 +1,118 @@
-#  数字取证
+#  数字取证究竟怎么入门？
 
-##  Wp
+##  前言：
 
-- [2021长安杯观看视频复盘感想](https://github.com/hengyi666/Digital-forensics/blob/main/2021%E5%B9%B4%E9%95%BF%E5%AE%89%E6%9D%AF%E8%A7%82%E7%9C%8B%E8%A7%86%E9%A2%91%E5%A4%8D%E7%9B%98%E6%84%9F%E6%83%B3.md)
-- [2021长安杯WP](https://github.com/hengyi666/Digital-forensics/blob/main/2021%E5%B9%B4%E9%95%BF%E5%AE%89%E6%9D%AFWp.md)
-- [2020长安杯Wp pro](https://github.com/hengyi666/Digital-forensics/blob/main/2020%E9%95%BF%E5%AE%89%E6%9D%AFWp.md)
-- [2019长安杯Wp pro](https://github.com/hengyi666/Digital-forensics/blob/main/2019%E9%95%BF%E5%AE%89%E6%9D%AFWp.md)
+数字取证，基本都是**安全方向**的小伙伴关心的比赛。像**长安杯,美亚杯**等都比较出名的。
 
+但是**入门难**是个问题，以及如何请教，如何学习都是一脸懵逼～
 
-##  必要的命令
+总结了下高校赛的参赛选手基本上是警察学院👮‍♀️，网安人员🦧，安全爱好者。
 
-###  查询文件/夹
+我在CSND上发布的[2021年长安杯观看视频复盘感想](https://blog.csdn.net/weixin_51485807/article/details/121088494)，会**经常有人私信我要检材资料**。
 
-- whereis只能用于程序名的搜索。
-- find命令
+我就想直接开个仓库，一口气学习搞定入门。
 
-```bash
-# 这里着重说一下find命令
-# 当前目录搜索所有文件，文件内容 包含 “140.206.111.111” 的内容
-find . -type f -name "*" | xargs grep "140.206.111.111"
+以上仓库均由**@HengY1**个人维护，欢迎大家提出自己看法。
 
-# 在/home目录下查找以.txt结尾的文件名
-find /home -name "*.txt"
+交流与补充的话直接开Pr/issue一起讨论。最后求个点赞/star
 
-# 匹配文件路径或者文件
-find /usr/ -path "*local*"
+##  你能收获什么？
 
-# 搜索恰好在七天前被访问过的所有文件
-find . -type f -atime 7
+现在都讲究的是快餐文化，我直接把该**仓库的大体内容写出来**，直接看有不有需要的。
 
-# 搜索大于10KB的文件
-find . -type f -size +10k
+即通过本仓库，你可以获得：
 
-# 删除 mac 下自动生成的文件
-find ./ -name '__MACOSX' -depth -exec rm -rf {} \;
+- 个人**比赛经验**分享
 
-# 统计代码行数,排除空行
-find . -name "*.java"|xargs cat|grep -v ^$|wc -l
-```
+- **检材**分享，上手实战
+- **复盘**视频收集与分享
+- 官方/民间/个人**WriteUp**
+- 比赛我究竟要**掌握什么**
+- 究竟要用什么**工具**来做
 
-###  查看/筛选文件夹
+## 个人**比赛经验**分享
 
-- grep命令
+我个人算是个典型例子，**有巅峰有滑铁卢**。
 
-```bash
-# 在多个文件中查找：
-grep "match_pattern" file_1 file_2 file_3 ...
+<details>
 
-# 统计文件或者文本中包含匹配字符串的行数 -c 选项：
-grep -c "text" file_name
-cat file_name | grep "text" -n
-```
+​	<summery>请听我娓娓道来</summery>
 
-> cat：从第一行开始显示文本内容（适用于内容较少的）
-> tac：从最后一行开始显示，是 cat 的逆顺序
-> more：一页一页的显示文本内容（适用于内容较多的）
-> less：与 more 类似，但是比 more 更好的是，它可以往前翻页！
-> head：只看文本的前面几行
-> tail：只看文本的后面几行
-> nl：显示文本内容与行号
+1. 先说下配置问题，首先你得准备个`1T`硬盘，保证基本的硬盘读写问题。电脑的运行内存最好到`16G`,不然你开个多个虚拟机就是弟中弟了。
 
-- cat命令
+2. 在来说比赛前吧，首先赛前的话就是去做**往年的题**，也就是拿着Wp和检材去复盘。跟着别人的答案去找题的答案，然后总结怎么做就好了。然后我就被2020年的美亚杯给坑了，因为2021年的美亚杯换了很多形式，做的我乱了手脚，就感觉题不是题一样。再去多看看别人发的视频，视频带着做那多好的是吧，到这里基本上赛前花时间就知道个大概了。
 
-> - Ctrl + s 停止滚屏幕
-> - Ctrl + q 恢复滚动
-> - Ctrl + c 中断
+3. 比赛中，跟队友好好沟通，然后多读题，别急着提交，题多的话就先分好工。然后队友之间的实力差距不要太大，不然很容易脱节。然后千万别心态崩溃，千万别心态崩溃，千万别心态崩溃。先把自己擅长的会的做了。然后推荐的解题是：Linux/Mac/手机/USB/Windows。先保证会的然后Windows往后移动，这是为什么呢？因为你拿工具扫了Windows基本上扫了个寂寞，基本上要开虚拟机进去看，基本上你的电脑会很卡，懂吗？本身检材开的够多了，软件开的够多了，你再来个Windows虚拟机。哦豁～
 
-- more命令
+4. 赛后好好复盘，准备下一场比赛，及时收集最新消息。
+5. 2021年的长安杯是我第一次正式比赛，比赛的内容基本上都是我平时在用的框架呀什么的。做题就是嗖嗖的秒杀。但是2021年的美亚杯就是我的滑铁卢了。我要吐槽的地方太多了。首先他说什么要录像好嘛没啥问题，关键是要用个他给你的软件，这个软件会自动杀掉你的QQ，微信，钉钉啥的，然后比赛还不能看手机，关键的来了！它密码太长官方给你的解压密码是错的，然后官方也不说，等人反应，这下好了20分钟多分钟了，官方换了密码，结果还是错的，最后我是实在憋不住问了别人，没有通讯工具，然后密码太长我一个个敲上去了，到解压出资料，40分钟已经过去了... 然后开始是分析手机，我拿出火眼发现分析个寂寞，根本扫不到材料。结果整了半天进去发现内置了分析器，进去还全是英文，又整了半天终于换成了中文。到这里我是彻底不想打了，整个比赛结束，我连Linux的题都没摸到.... 下午队友少了一个，没啥想法了。~~（看来火眼~~~~钱没给够啊）~~。
 
-> - Enter 向下翻一行
-> - 空格 向下滚动一屏幕
-> - Q 退出命令
+</details>
 
-- less命令
+---
 
-> PageUp 向上翻
->
-> PageDown 向下翻
->
-> Q 退出
+##  历年检材分享
 
-###  查询历史
+> 1. Vc container的挂载密码是指你输入进去后，你的电脑就多了个指定的盘
+> 2. 多个压缩文件合并使用7z多选右键合并解压，输入密码就下来完整的
 
-- history命令
+2021年美亚杯的解压密码统一为： `MeiyaCup2021`
 
-```bash
-# 使用history命令显示最近使用的10条历史命令
-history 10
+模拟练习搭配：https://forensics.xidian.edu.cn/ 使用
 
-选项
--c           清空历史列表。
--d offset    根据offset删除记录。如果是正数则表示offset位置的记录，如果为负数则表示从结尾向前offset位置的记录。
--a           将当前终端的历史记录行添加到历史记录文件。
--n           将尚未从历史文件中读取的历史行追加到当前历史列表中。
--r           读取历史文件，并将其内容附加到历史列表中。
--w           将当前历史记录列表附加到历史记录文件中并且附加它们到历史列表中。
--p           在每个arg上执行历史记录扩展并在标准输出上显示结果，而不将结果存储在历史记录列表中。
--s           将每个arg作为单个条目附加到历史记录列表。
+|        名称        |                      链接                       | 提取码 |                      解压密码/挂载密码                       |
+| :----------------: | :---------------------------------------------: | :----: | :----------------------------------------------------------: |
+|    2021年长安杯    |    https://www.aliyundrive.com/s/bfkLNmRXs7i    |   无   |                 2021第三届CAB-changancup.com                 |
+| 2021年美亚杯个人赛 | https://pan.baidu.com/s/15kQsiW1h_Onjl3dxokNHzA |  dv2g  | HfsCk]<eUqc5Q{(DG$ugiGlt8ezGdaZ>!pQC-H\5BAc^gBo/^qq)/i2lufiN@H"Y |
+| 2021年美亚杯团队赛 | https://pan.baidu.com/s/1Rj1r8jnMIiBfGXK-lyS7DQ |  jii2  | uR%{)Y'Qz-n3oGU`ZJo@(1ntxp8U1+bW;JlZH^I4%0rxf;[N+eQ)Lolrw&E%,4q1 |
 
-# ⚠️注意：
-在命令行中，可以使用符号!执行指定序号的历史命令。例如，要执行第2个历史命令，则输入!2。
-关闭终端后，历史列表将被写入历史文件~/.bash_history。
-环境变量HISTSIZE决定了历史文件中命令的存储数量，默认存储1000条。
-```
+##  复盘视频
 
-##  工具🔧
+|         名称         |                      链接                      |
+| :------------------: | :--------------------------------------------: |
+| 2021年长安杯完整复盘 |  https://www.bilibili.com/video/BV1hP4y1b7Vj   |
+| 2021年美亚杯穿插复盘 | https://mudu.tv/live/watch/general?id=lj71nj2l |
 
-- 火眼手机 [说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%81%AB%E7%9C%BC%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
-- 火眼仿真 [说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%81%AB%E7%9C%BC%E4%BB%BF%E7%9C%9F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
-- 网探 [说明书链接](https://github.com/hengyi666/Digital-forensics/blob/main/%E7%BD%91%E6%8E%A2%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)🔗
+## WriteUp
 
+- **XDforensics-Wiki** 上的真题WriteUp ：https://forensics.xidian.edu.cn/wiki/Zello&Xeno/
 
+|                    名称                    |                             链接                             |
+| :----------------------------------------: | :----------------------------------------------------------: |
+|         2021年美亚杯个人赛Write-up         |      https://mp.weixin.qq.com/s/brTWF2bCTQb-2yH457-C_A       |
+|            2019年长安杯Write-up            | [Github仓库](https://github.com/HengY1Sky/Where-Is-Evidence/blob/main/2019%E9%95%BF%E5%AE%89%E6%9D%AFWp.md) |
+|            2020年长安杯Write-up            | [Github仓库](https://github.com/HengY1Sky/Where-Is-Evidence/blob/main/2020%E9%95%BF%E5%AE%89%E6%9D%AFWp.md) |
+|            2021年长安杯Write-up            | [Github仓库](https://github.com/HengY1Sky/Where-Is-Evidence/blob/main/2021%E5%B9%B4%E9%95%BF%E5%AE%89%E6%9D%AFWp.md) |
+|        2021年长安杯观看视频复盘感想        | [Github仓库](https://github.com/HengY1Sky/Where-Is-Evidence/blob/main/2021%E5%B9%B4%E9%95%BF%E5%AE%89%E6%9D%AF%E8%A7%82%E7%9C%8B%E8%A7%86%E9%A2%91%E5%A4%8D%E7%9B%98%E6%84%9F%E6%83%B3.md) |
+| 第七届“美亚杯”取证小程序解题复盘回顾第一期 |      https://mp.weixin.qq.com/s/hLOeiD2fbSb8K63-q8t6Rw       |
+|      第七届“美亚杯”解题复盘回顾第二期      |      https://mp.weixin.qq.com/s/K1_OZdo9V0wRro1zwhAIIw       |
+|      第七届“美亚杯”解题复盘回顾第三期      |      https://mp.weixin.qq.com/s/YFmHxmZydxejXLwU1oYewQ       |
 
+##  能力要求
 
+老基础三件套： Mysql + Apache + Php
 
+前端三件套： Html + CSS + Js
 
+掌握：Python；Php；Java；JavaScript；Golong
 
+*Linux操作熟练  *Mysql操作熟练
+
+总的来说从 **Linux基础/编程语言的基础** => **功能实现/框架掌握**
+
+学的越多，你会发现你越是啥不是～
+
+## 必备工具
+
+**分析软件你个人是下载不到的**，叫老师联系对应公司的人
+
+上交你们的学生证照片会**发账号权限下来/密钥下来**
+
+软件使用是有时间限制的，且用且珍惜
+
+|   名称   |                评价                |                            说明书                            |
+| :------: | :--------------------------------: | :----------------------------------------------------------: |
+| 火眼分析 |         分析手机是真的好用         | [Github仓库](https://github.com/HengY1Sky/Where-Is-Evidence/blob/main/%E7%81%AB%E7%9C%BC%E6%89%8B%E6%9C%BA%E5%8F%96%E8%AF%81%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf) |
+| 火眼仿真 |   虚拟机专用，绕密码啥的挺好用的   | [Github仓库](https://github.com/HengY1Sky/Where-Is-Evidence/blob/main/%E7%81%AB%E7%9C%BC%E4%BB%BF%E7%9C%9F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf) |
+| 取证大师 | Window/Linux分析比火眼全，小工具多 |                             暂无                             |
 
