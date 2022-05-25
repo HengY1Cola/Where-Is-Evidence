@@ -62,11 +62,14 @@
 
 模拟练习搭配：https://forensics.xidian.edu.cn/ 使用
 
+于2022-05-25 更新密码，由粉丝私信后提供[奇乃正博客](https://blog.csdn.net/weixin_42744595/article/details/122909208)
+
 |        名称        |                      链接                       | 提取码 |                      解压密码/挂载密码                       |
 | :----------------: | :---------------------------------------------: | :----: | :----------------------------------------------------------: |
 |    2021年长安杯    |    https://www.aliyundrive.com/s/bfkLNmRXs7i    |   无   |                 2021第三届CAB-changancup.com                 |
-| 2021年美亚杯个人赛 | https://pan.baidu.com/s/15kQsiW1h_Onjl3dxokNHzA |  dv2g  | HfsCk]<eUqc5Q{(DG$ugiGlt8ezGdaZ>!pQC-H\5BAc^gBo/^qq)/i2lufiN@H"Y |
+| 2021年美亚杯个人赛 | https://pan.baidu.com/s/15kQsiW1h_Onjl3dxokNHzA |  dv2g  | HfsCk]<eUqc5Q{(DG$ugiGlt8ezGdaZ>!pQC-H\5BAc^gBo/^qq)/i21ufiN@H"Y |
 | 2021年美亚杯团队赛 | https://pan.baidu.com/s/1Rj1r8jnMIiBfGXK-lyS7DQ |  jii2  | uR%{)Y'Qz-n3oGU`ZJo@(1ntxp8U1+bW;JlZH^I4%0rxf;[N+eQ)Lolrw&E%,4q1 |
+| 2021_Meiya_补充文件 | 个人赛见上面 |  上面  | +2FL?89MajaHRE5Q9pp%@V2rwnwK-M=KD4Y55#vyBq99JhT22$%Z2ebkaTNn^s-n  |
 
 ##  复盘视频
 
