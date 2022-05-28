@@ -92,6 +92,7 @@
 | 第七届“美亚杯”取证小程序解题复盘回顾第一期 |      https://mp.weixin.qq.com/s/hLOeiD2fbSb8K63-q8t6Rw       |
 |      第七届“美亚杯”解题复盘回顾第二期      |      https://mp.weixin.qq.com/s/K1_OZdo9V0wRro1zwhAIIw       |
 |      第七届“美亚杯”解题复盘回顾第三期      |      https://mp.weixin.qq.com/s/YFmHxmZydxejXLwU1oYewQ       |
+|      2021年“美亚杯”全国电子取证比赛复盘     |      https://mp.weixin.qq.com/s/0707wBREpILm88DgMOGp3g       |
 
 ##  能力要求
 
