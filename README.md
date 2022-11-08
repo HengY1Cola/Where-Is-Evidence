@@ -70,6 +70,7 @@
 | 2021年美亚杯个人赛 | https://pan.baidu.com/s/15kQsiW1h_Onjl3dxokNHzA |  dv2g  | HfsCk]<eUqc5Q{(DG$ugiGlt8ezGdaZ>!pQC-H\5BAc^gBo/^qq)/i21ufiN@H"Y |
 | 2021年美亚杯团队赛 | https://pan.baidu.com/s/1Rj1r8jnMIiBfGXK-lyS7DQ |  jii2  | uR%{)Y'Qz-n3oGU`ZJo@(1ntxp8U1+bW;JlZH^I4%0rxf;[N+eQ)Lolrw&E%,4q1 |
 | 2021_Meiya_补充文件 | 个人赛见上面 |  上面  | +2FL?89MajaHRE5Q9pp%@V2rwnwK-M=KD4Y55#vyBq99JhT22$%Z2ebkaTNn^s-n  |
+| 2022年长安杯 | https://pan.baidu.com/s/1tm85tAOxsJkVkmk3-OYnBQ |  69mo  | 2022.4th.changancup! |
 
 ##  复盘视频
 
@@ -77,10 +78,13 @@
 | :------------------: | :--------------------------------------------: |
 | 2021年长安杯完整复盘 |  https://www.bilibili.com/video/BV1hP4y1b7Vj   |
 | 2021年美亚杯穿插复盘 | https://mudu.tv/live/watch/general?id=lj71nj2l |
+| 2022年长安杯B站讲解复盘 | https://www.bilibili.com/video/BV1iG4y1h7tZ/ |
 
 ## WriteUp
 
 - **XDforensics-Wiki** 上的真题WriteUp ：https://forensics.xidian.edu.cn/wiki/Zello&Xeno/
+
+- 22年长安杯还是拿了二等奖🥈，但是没有写Wp，我建议直接看上面的复盘视频效果最佳
 
 |                    名称                    |                             链接                             |
 | :----------------------------------------: | :----------------------------------------------------------: |
